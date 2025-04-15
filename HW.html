@@ -4,16 +4,17 @@
     <head>
         <title>TheBestCockatooWebsiteEVER!!!</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="design.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+        <link rel="stylesheet" href="design.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
         <header>
             <h1><a href="http://127.0.0.1:5500/index.html">Welcome To The Cockatoo's Page</a></h1>
-            <nav>
-                <ul>
+            <nav class="navbar">
+                <ul class="nav-ul">
                     <li title="Learn about Cockatoos">
                         <a class="nav-link" href="#About">About</a>
                     </li>
@@ -34,33 +35,41 @@
         </header>
 
         <!-- Hero Section-->
-            <section id="About" class="section-hero"><a href="https://he.wikipedia.org/wiki/%D7%A7%D7%A7%D7%93%D7%95%D7%90%D7%99%D7%99%D7%9D"><img src="AboutACockatoo.jpg" alt="A pic of a Cockatoo" class="section-img"></a>
-                <div>
+                 <section id="About" class="section-hero"><a href="https://he.wikipedia.org/wiki/%D7%A7%D7%A7%D7%93%D7%95%D7%90%D7%99%D7%99%D7%9D"><img src="images/AboutACockatoo.jpg" alt="A pic of a Cockatoo" class="section-img"></a>
+                <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-6">
+                <div class="section-content">
                     <h2>About</h2>
                     <p>Cockatoos are intelligent and social parrots known for their playful nature and striking crests. Native to Australia and nearby islands, these birds form strong bonds with their flock and human caretakers, click here to learn more about them</p>
                 </div>
+                </div>
                 </section>
                 
-                <section id="Conservation" class="section-hero"><a href="https://www.natureaustralia.org.au/what-we-do/our-priorities/wildlife/wildlife-stories/cockatoos-of-australia/#:~:text=This%20migratory%20species%20is%20declining,result%20is%20listed%20as%20endangered."><img src="Conservation.jpg" alt="Feeding Cockatoo" class="section-img"></a></li>
-                    <div>
+                <section id="Conservation" class="section-hero"><a href="https://www.natureaustralia.org.au/what-we-do/our-priorities/wildlife/wildlife-stories/cockatoos-of-australia/#:~:text=This%20migratory%20species%20is%20declining,result%20is%20listed%20as%20endangered."><img src="images/Conservation.jpg" class="section-img"></a></li>
+                    <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-6">
+                    <div class="section-content">
                         <h2>Conservation</h2>
                         <p>Cockatoos face increasing threats due to habitat loss, illegal pet trade, and climate change. Conservation efforts focus on protecting their natural environment, enforcing wildlife laws, and raising awareness to ensure these intelligent birds thrive for generations to come.</p>
-                    </div>
+                    </div>  
+                    </div>                  
                 </section>
         
         
-                <section id="Gallery" class="section-hero"><a href="https://www.google.com/search?q=cockatoo&sca_esv=aef8e287bae27f94&udm=2&biw=767&bih=730&sxsrf=AHTn8zoGScBcAL7ubDwqwr0F77a-ziS_zw%3A1743591753476&ei=SRntZ7jwHMKgkdUPtPap6QE&oq=cokcat&gs_lp=EgNpbWciBmNva2NhdCoCCAAyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGApIyBpQ6wpYwRNwA3gAkAEAmAFzoAGIBaoBAzAuNrgBA8gBAPgBAZgCCaACvwXCAgYQABgHGB7CAgUQABiABMICBBAAGB7CAgYQABgIGB7CAgcQIxgnGMkCwgIKEAAYgAQYQxiKBcICCBAAGIAEGLEDwgILEAAYgAQYsQMYgwHCAg4QABiABBixAxiDARiKBZgDAIgGAZIHAzMuNqAH1SeyBwMwLja4B7UF&sclient=img"> <img src="Gallery.jpg" alt="Beautiful Cockatoo" class="section-img"></a>
-                    <div>
+                <section id="Gallery" class="section-hero"><a href="https://www.google.com/search?q=cockatoo&sca_esv=aef8e287bae27f94&udm=2&biw=767&bih=730&sxsrf=AHTn8zoGScBcAL7ubDwqwr0F77a-ziS_zw%3A1743591753476&ei=SRntZ7jwHMKgkdUPtPap6QE&oq=cokcat&gs_lp=EgNpbWciBmNva2NhdCoCCAAyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGApIyBpQ6wpYwRNwA3gAkAEAmAFzoAGIBaoBAzAuNrgBA8gBAPgBAZgCCaACvwXCAgYQABgHGB7CAgUQABiABMICBBAAGB7CAgYQABgIGB7CAgcQIxgnGMkCwgIKEAAYgAQYQxiKBcICCBAAGIAEGLEDwgILEAAYgAQYsQMYgwHCAg4QABiABBixAxiDARiKBZgDAIgGAZIHAzMuNqAH1SeyBwMwLja4B7UF&sclient=img"> <img src="images/Gallery.jpg" alt="Beautiful Cockatoo" class="section-img"></a>
+                    <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-6">
+                    <div class="section-content">
                         <h2>Gallery</h2>
                         <p>Explore the stunning world of cockatoos through our gallery! From vibrant crests to playful interactions, these images capture the beauty, intelligence, and personality of these incredible birds.</p>
                     </div>
+                    </div>
                 </section>
         
         
-                <section id="Pet" class="section-hero"><a href="https://www.thesprucepets.com/cockatoos-as-pets-1238604#toc-caring-for-the-cockatoo"><img src="PetACockatoo.avif" alt="Peting a Cockatoo" class="section-img"></a>
-                    <div>
+                <section id="Pet" class="section-hero"><a href="https://www.thesprucepets.com/cockatoos-as-pets-1238604#toc-caring-for-the-cockatoo"><img src="images/PetACockatoo.avif" alt="Peting a Cockatoo" class="section-img"></a>
+                    <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-6">
+                    <div class="section-content">
                         <h2>Thinking About a Pet Cockatoo?</h2>
                         <p>Cockatoos are affectionate and intelligent, but they require lifelong commitment, social interaction, and proper care. Before bringing one home, learn about their needs, potential challenges, and daily responsibilities. Click the link to discover if a cockatoo is the right pet for you!</p>
+                    </div>
                     </div>
                 </section>
 
@@ -68,37 +77,67 @@
                 <section>
                     <h2 class="gallery-title">Cards Gallery</h2>
                     <div class="cards-container">
-                        <div class="card">
-                            <img src="1of8.jpg" class="card-img" alt="Pink cockatoo">
-                            <p>Pink cockatoo: Also known as Major Mitchell’s cockatoo, this elegant bird is admired for its soft pink plumage and colorful crest.</p>
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="card">
+                                            <img src="images/1of8.jpg" class="card-img" alt="Pink cockatoo">
+                                            <p>Pink cockatoo: Also known as Major Mitchell’s cockatoo, this elegant bird is admired for its soft pink plumage and colorful crest.</p>
+                                        </div>
+                                    </div>
+
+                                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                    <div class="card">
+                                        <img src="images/2of8.jpg" class="card-img" alt="Galah cockatoo">
+                                        <p>Galah cockatoo: A playful and social parrot with a grey body and pink chest, commonly seen across Australia</p>
+                                    </div>
+                                </div>    
+
+                                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                    <div class="card">
+                                        <img src="images/3of8.webp" class="card-img" alt="Palm cockatoo">
+                                        <p>Palm cockatoo: A rare and majestic bird with smoky-black feathers and red cheeks, known for drumming with sticks to attract mates</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                    <div class="card">
+                                        <img src="images/4of8.jpg" class="card-img" alt="Yellow-tailed Black cockatoo">
+                                        <p>Yellow-tailed Black cockatoo:A striking black cockatoo with yellow tail patches, known for its strong beak and haunting call</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card">
-                            <img src="2of8.jpg" class="card-img" alt="Galah cockatoo">
-                            <p>Galah cockatoo: A playful and social parrot with a grey body and pink chest, commonly seen across Australia</p>
-                        </div>
-                        <div class="card">
-                            <img src="3of8.webp" class="card-img" alt="Palm cockatoo">
-                            <p>Palm cockatoo: A rare and majestic bird with smoky-black feathers and red cheeks, known for drumming with sticks to attract mates</p>
-                        </div>
-                        <div class="card">
-                            <img src="4of8.jpg" class="card-img" alt="Yellow-tailed Black cockatoo">
-                            <p>Yellow-tailed Black cockatoo:A striking black cockatoo with yellow tail patches, known for its strong beak and haunting call</p>
-                        </div>
-                        <div class="card">
-                            <img src="5of8.jpg" class="card-img" alt="Sulphur-crested cockatoo">
-                            <p>Sulphur-crested cockatoo: Famous for its bright yellow crest and loud personality, this cockatoo is both intelligent and expressive</p>
-                        </div>
-                        <div class="card">
-                            <img src="6of8.jpg" class="card-img" alt="Sulphur-crested cockatoo">
-                            <p>Sulphur-crested cockatoo</p>
-                        </div>
-                        <div class="card">
-                            <img src="7of8.jpg" class="card-img" alt="Palm cockatoo">
-                            <p>Palm cockatoo</p>
-                        </div>
-                        <div class="card">
-                            <img src="8of8.jpg" class="card-img" alt="Sulphur-crested cockatoo">
-                            <p>Sulphur-crested cockatoo</p>
+                        
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="images/5of8.jpg" class="card-img" alt="Sulphur-crested cockatoo">
+                                    <p>Sulphur-crested cockatoo: Famous for its bright yellow crest and loud personality, this cockatoo is both intelligent and expressive</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="images/6of8.jpg" class="card-img" alt="Sulphur-crested cockatoo">
+                                    <p>Sulphur-crested cockatoo</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="images/7of8.jpg" class="card-img" alt="Palm cockatoo">
+                                    <p>Palm cockatoo</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <img src="images/8of8.jpg" class="card-img" alt="Sulphur-crested cockatoo">
+                                    <p>Sulphur-crested cockatoo</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
